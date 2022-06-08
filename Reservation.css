@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300;400&display=swap');
+*{
+    padding:0%;
+    margin: 0%;
+}
+nav{
+    display: flex;
+}
+.logo{
+    width: 20%;
+
+}
+a :visited{
+   text-decoration: none; 
+   color: white;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #0B123F;
+}
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.logo{
+    margin-right: auto;
+ 
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+     padding-top: 2% ;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+    padding-right: 1em;
+  
+}
+.navbar li a:hover{
+color: greenyellow;
+}
+button{
+    background-color: #061D95;
+    border:  none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 15px;
+    text-align: center;
+
+}
+.log{
+    padding-right: 1px;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+body{
+    background-color: #0f1854;
+}
+H1{
+    color: greenyellow;
+    margin-left: 45%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    margin-top: 2%
+}
+p{
+    color: greenyellow;
+    margin-left: 36%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:119%;
+    margin-top: 2%
+}
+ form{
+     padding: 5% 5% 10% 10%;
+ }
+.form{
+    margin-left:45%;
+    margin-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+}
+::placeholder{
+    color: greenyellow;
+}
+.container{
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 2%;
+    border-color: greenyellow;
+    margin-right: 90%;
+    margin-left: -10%;
+    width: 40%;
+    height: 60%;
+}
+.Input{
+    padding-top: 7%;
+    
+}
+.field{
+    padding: 1.5% 5% 1.5% 2%;
+    background-color: transparent;
+    color: greenyellow;
+    font-size: larger; 
+    border-color: greenyellow;
+    border-width: 5px;
+    border-style: double;
+    outline: none;
+}
+.submit{
+    background: greenyellow;
+    color: black;
+   margin-top: 5%;
+   border-radius: 0ch;
+   padding: 3% 20% 3% 20%;
+   align-items: center;
+   margin-left: 15%;
+   
+}
+#date{
+   width: 220%;
+}
+@media screen and (max-width:480px ){ 
+    header{
+        height: 60px;
+     
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    li a{
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 105px;
+       bottom: 10px;
+       right: 50px;
+       
+    }
+    .txt{
+        position: relative;
+        right: 70px;
+    }
+    .txt p{
+        display: inline;
+        position: relative;
+        right: 5em;
+        white-space: nowrap;
+        font-size: 17px;
+    }
+  
+    .container{
+        position: relative;
+        right: 120px;
+        width: 350px;
+        top: 10px;
+    }
+    .submit{
+        position: relative;
+        left: 5px;
+    }
+}
+@media screen and (max-width:768px){ 
+    header{
+        height: 80px;
+        width: 54em;
+     
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+    li a{
+        position: relative;
+        right: 120px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 135px;
+       bottom: 10px;
+       right: 10px;
+       
+    }
+    .txt{
+        position: relative;
+        left: 0px;
+    }
+    .txt p{
+        display: inline;
+        position: relative;
+        right: 2.5em;
+        white-space: nowrap;
+        font-size: 17px;
+    }
+  
+    .container{
+        position: relative;
+        right: 30px;
+        width: 350px;
+        top: 10px;
+    }
+    .submit{
+        position: relative;
+        left: 5px;
+    }
+}
+@media screen and (max-width:1024px){ 
+    header{
+        height: 80px;
+        width: 63em;
+     
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+    li a{
+        position: relative;
+        right: 120px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 135px;
+       bottom: 15px;
+       right: 10px;
+       
+    }
+    .txt{
+        position: relative;
+        left: 0px;
+    }
+    .txt p{
+        display: inline;
+        position: relative;
+        right: 1.5em;
+        white-space: nowrap;
+        font-size: 17px;
+    }
+  
+    .container{
+        position: relative;
+        right: 30px;
+        width: 350px;
+        top: 10px;
+    }
+    .submit{
+        position: relative;
+        left: 5px;
+    }
+}
+@media screen and (max-width:1200px){ 
+    header{
+        height: 80px;
+        width: 70.3em;
+     
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+    li a{
+        position: relative;
+        right: 120px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 135px;
+       bottom: 15px;
+       right: 10px;
+       
+    }
+    .txt{
+        position: relative;
+        left: -20px;
+    }
+    .txt p{
+        display: inline;
+        position: relative;
+        right: 1.5em;
+        white-space: nowrap;
+        font-size: 17px;
+    }
+  
+    .container{
+        position: relative;
+        right: 30px;
+        width: 350px;
+        top: -9px;
+    }
+    .submit{
+        position: relative;
+        left: 5px;
+    }
+}

@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gelasio:ital@1&family=M+PLUS+Code+Latin&family=Montserrat&family=Oleo+Script+Swash+Caps:wght@700&family=Roboto:wght@300;400&display=swap');
+*{
+    padding:0%;
+    margin: 0%;
+}
+body{
+    background-color: #0B123F;
+    color: #fff;
+}
+nav{
+    display: flex;
+}
+.logo{
+    width: 20%;
+}
+a :visited{
+   text-decoration: none; 
+   color: white;
+}
+a:link{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #0B123F;
+}
+
+li, a, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 105%;
+    color: white;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.logo{
+    margin-right: auto;
+}
+.navbar{
+    list-style: none;
+}
+.navbar li{
+    display: inline-block;
+     padding-top: 2% ;
+}
+.navbar li a{
+    transition: all 0.3s ease 0s;
+    padding-right: 1em;
+}
+.navbar li a:hover{
+color: greenyellow;
+}
+button{
+    background-color: #061D95;
+    border:  none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left: 15px;
+    text-align: center;
+}
+.log{
+    padding-right: 1px;
+}
+button:hover{
+    background-color: greenyellow;
+    color: black;
+}
+.image{
+background-repeat: no-repeat;
+width: 100%;
+height: 91vh;
+margin-bottom: 0;
+}
+.form{
+    padding-left:39%;
+    margin-top: -25%;
+    align-items: center;
+}
+.container{
+  position: relative;  
+  padding: 7% 4%;
+}
+.container H2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50%;
+    margin-bottom: 0.1%;
+    margin-top: -32%;
+  font-size: xx-large;
+    font-weight: 550;
+    align-content: center;
+}
+.container .Input{
+    position: relative;
+    width: 60%;
+    height: 70px;
+    margin-left: 32%;
+
+}
+.container .Input:last-child{
+    margin-bottom: 0;
+}
+.container .Input input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid white;
+    background: transparent;
+    padding: 2%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    margin-top: 10%;
+}
+
+.container .Input .inputtype{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+    margin-top:10%;
+    font-family: 'Montserrat', sans-serif;
+}
+.container .Input input:focus ~ .inputtype,
+.container .Input input:valid ~ .inputtype {
+    transform: translateY(-10px) translateY(-15px);
+    font-size: 79%;
+}
+.Input{
+    margin-left: 400px;
+}
+.submit {
+    background: #0B123F;
+    color: #fff;
+    border: none;
+    max-width: 120px;
+    cursor: pointer;
+    font-weight: 500;
+   margin-top: 16%;
+   border-radius: 0ch;
+   padding: 2% 20% 2% 8%;
+   align-items: center;
+   margin-left: 34%;
+   border-radius: 20px;
+   box-shadow: 2px black;
+}
+.submit:hover{
+    background-color: #283485;
+    color: white;
+}
+@media screen and (max-width:480px ){ 
+    header{
+        height: 60px;
+     
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    li a{
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 105px;
+       bottom: 10px;
+       right: 50px;
+       
+    }
+    .main img{
+        width: fit-content;
+
+    }
+    .container {
+        position: relative;
+        bottom: 300px;
+        right:120px;
+        display: inline;
+        white-space: nowrap ;
+    }
+    .container H2{
+        position: relative;
+        left: -15px;
+    }
+    .form{
+        width: 500px;
+        height:100px ;
+        position: relative;
+        right: 140px;
+        top:30px;
+    }
+    .Input {
+        box-sizing: border-box;
+    }
+    .Input input{
+        position: relative;
+        width: 100px;
+        padding-left: 5em;
+    }
+    .Input button{
+        position: relative;
+        left: -10px;
+    }
+    .Input span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:768px){ 
+    header{
+        height: 60px;
+        width: 43em;
+    }
+    .logo{
+    position: relative;
+    left: 40px;
+    }
+    nav{
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 12px;
+    }
+    li a{
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 105px;
+       bottom: 10px;
+       right: 50px;
+       
+    }
+    .main img{
+        width: fit-content;
+
+    }
+    .container {
+        position: relative;
+        bottom: 230px;
+        right:90px;
+        display: inline;
+        white-space: nowrap ;
+    }
+    .container H2{
+        position: relative;
+        left: -15px;
+    }
+    .form{
+        width: 500px;
+        height:100px ;
+        position: relative;
+        right: 140px;
+        top:30px;
+    }
+    .Input {
+        box-sizing: border-box;
+    }
+    .Input input{
+        position: relative;
+        width: 100px;
+        padding-left: 5em;
+    }
+    .Input button{
+        position: relative;
+        left: -10px;
+    }
+    .Input span{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:1024px){ 
+    header{
+        height: 70px;
+        width: 43em;
+    }
+    .logo{
+    position: relative;
+    left: 100px;
+    top: 10px;
+    }
+    nav{
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        font-size: 12px;
+        left: 270px;
+        top: 10px;
+    }
+    li a{
+        position: relative;
+        right: 100px;
+        top: 10px;
+    }
+    button{
+       position: relative;
+       left: 105px;
+       bottom: 10px;
+       right: 50px;
+       
+    }
+    .main img{
+        width: fit-content;
+
+    }
+    .container {
+        position: relative;
+        bottom: 150px;
+        right: 20px;
+        display: inline;
+        white-space: nowrap ;
+    }
+    .container H2{
+        position: relative;
+        left: -15px;
+    }
+    .form{
+        width: 500px;
+        height:100px ;
+        position: relative;
+        right: 140px;
+        top:30px;
+    }
+    .Input {
+        box-sizing: border-box;
+    }
+    .Input input{
+        position: relative;
+        width: 100px;
+        padding-left: 5em;
+    }
+    .Input button{
+        position: relative;
+        left: -10px;
+    }
+    .Input span{
+        font-size: 12px;
+    }
+}
